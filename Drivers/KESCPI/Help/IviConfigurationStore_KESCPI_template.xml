@@ -1,0 +1,117 @@
+<IviConfigStore xmlns:dt="urn:schemas-microsoft-com:datatypes">
+        <Name>IVI Configuration Server (32-bit C API)</Name>
+        <Description>The IVI Configuration Server allows access to and modification of an IVI configuration store.</Description>
+        <Vendor>IVI Foundation, Inc.</Vendor>
+        <Revision>1.7.0.12115</Revision>
+        <SpecificationMajorVersion>1</SpecificationMajorVersion>
+        <SpecificationMinorVersion>7</SpecificationMinorVersion>
+        <MasterLocation>C:\Documents and Settings\All Users\Application Data\IVI Foundation\IVI\IviConfigurationStore.xml</MasterLocation>
+        <ProcessDefaultLocation>C:\Documents and Settings\All Users\Application Data\IVI Foundation\IVI\KESCPI.xml</ProcessDefaultLocation>
+        <ActualLocation>C:\Documents and Settings\All Users\Application Data\IVI Foundation\IVI\KESCPI.xml</ActualLocation>
+        <PublishedAPIs>
+                <IviPublishedAPI id="p14">
+                        <Name>IviDriver</Name>
+                        <MajorVersion>1</MajorVersion>
+                        <MinorVersion>0</MinorVersion>
+                        <Type>IVI-C</Type>
+                </IviPublishedAPI>
+        </PublishedAPIs>
+        <SoftwareModules>
+                <IviSoftwareModule id="p15">
+                        <Name>KESCPI</Name>                       
+                        <Description>Keithley SCPI-based Instrument IVI-C Driver</Description>
+                        <DataComponents>
+                                <IviStructure id="p16">
+                                        <Name>NI Settings</Name>
+                                        <Description>National Instruments specific settings</Description>
+                                        <ReadOnly>0</ReadOnly>
+                                        <UsedInSession>Optional</UsedInSession>
+                                        <Type>Structure</Type>
+                                        <HelpContextID>0</HelpContextID>
+                                        <HelpFilePath/>
+                                        <SoftwareModuleKey/>
+                                        <DataComponents>
+                                                <IviString id="p17">
+                                                        <Name>Interface</Name>
+                                                        <Description>Supported Interface.</Description>
+                                                        <ReadOnly>0</ReadOnly>
+                                                        <UsedInSession>None</UsedInSession>
+                                                        <Type>String</Type>
+                                                        <HelpContextID>0</HelpContextID>
+                                                        <HelpFilePath/>
+                                                        <SoftwareModuleKey/>
+                                                        <Value>GPIB</Value>
+                                                </IviString>
+                                        </DataComponents>
+                                </IviStructure>
+                        </DataComponents>
+                        <ModulePath>KESCPI_32.dll</ModulePath>
+                        <Prefix>KESCPI</Prefix>
+                        <ProgID/>
+                        <SupportedInstrumentModels>ANY</SupportedInstrumentModels>
+                        <PhysicalNames/>
+                        <PublishedAPIs>
+                                <IviPublishedAPI idref="p14"/>
+                        </PublishedAPIs>
+                        <AssemblyQualifiedClassName/>
+                        <ModulePath64/>
+                </IviSoftwareModule>
+        </SoftwareModules>
+        <HardwareAssets>
+                <IviHardwareAsset id="p18">
+                        <Name>COM1</Name>
+                        <Description>Instrument on COM port 1</Description>
+                        <DataComponents/>
+                        <IOResourceDescriptor>ASRL1::INSTR</IOResourceDescriptor>
+                </IviHardwareAsset>
+                <IviHardwareAsset id="p19">
+                        <Name>GPIB0_16</Name>
+                        <Description>Instrument on GPIB0 port 16</Description>
+                        <DataComponents/>
+                        <IOResourceDescriptor>GPIB0::16::INSTR</IOResourceDescriptor>
+                </IviHardwareAsset>
+        </HardwareAssets>
+        <DriverSessions>
+                <IviDriverSession id="p20">
+                        <Name>KESCPI_COM1</Name>
+                        <Description>Keithley SCPI-based Instrument on Serial port 1</Description>
+                        <DataComponents/>
+                        <IviHardwareAsset idref="p18"/>
+                        <IviSoftwareModuleRef idref="p15"/>
+                        <VirtualNames/>
+                        <SoftwareModuleName>KESCPI</SoftwareModuleName>
+                        <Cache>1</Cache>
+                        <DriverSetup/>
+                        <InterchangeCheck>1</InterchangeCheck>
+                        <QueryInstrStatus>1</QueryInstrStatus>
+                        <RangeCheck>1</RangeCheck>
+                        <RecordCoercions>1</RecordCoercions>
+                        <Simulate>0</Simulate>
+                </IviDriverSession>
+                <IviDriverSession id="p21">
+                        <Name>KESCPI_GPIB0_16</Name>
+                        <Description>Keithley SCPI-based Instrument on GPIB0 port 16</Description>
+                        <DataComponents/>
+                        <IviHardwareAsset idref="p19"/>
+                        <IviSoftwareModuleRef idref="p15"/>
+                        <VirtualNames/>
+                        <SoftwareModuleName>KESCPI</SoftwareModuleName>
+                        <Cache>1</Cache>
+                        <DriverSetup/>
+                        <InterchangeCheck>1</InterchangeCheck>
+                        <QueryInstrStatus>1</QueryInstrStatus>
+                        <RangeCheck>1</RangeCheck>
+                        <RecordCoercions>1</RecordCoercions>
+                        <Simulate>0</Simulate>
+                </IviDriverSession>
+        </DriverSessions>
+        <Sessions>
+        </Sessions>
+        <LogicalNames>
+                <IviLogicalName id="p37">
+                        <Name>KESCPIExampleInstr</Name>
+                        <Description>Logical Name used by KESCPI Examples</Description>
+                        <IviDriverSession idref="p20"/>
+                </IviLogicalName>
+        </LogicalNames>
+</IviConfigStore>

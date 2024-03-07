@@ -1,0 +1,31 @@
+
+IVI Compliance Category:
+-----------------------
+
+IVI-C IviFgen Class Instrument Driver
+Class Specification version:		5.00
+
+
+
+Driver Identification:
+---------------------
+
+Driver Revision: 			5.0
+Driver Vendor: 				National Instruments
+Prefix: 				IviFgen
+Description: 				Class driver for IviFgen
+
+
+
+Software Information:
+---------------------
+
+Support Software Required: 		National Instruments IVI Compliance Package ver 4.5 or later
+					VISA 4.6
+Source Code Availability: 		Source code is not available. 
+
+
+
+
+
+Note: Class driver help is located in the ...\National Instruments\IVI\Help directory on your system.

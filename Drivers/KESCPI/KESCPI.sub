@@ -1,0 +1,410 @@
+FPAttributeValueFile
+
+n  SubType="IVI" 
+
+n  SubVersion="1" 
+
+v attrRs232TerminationCharRangeTable DataType="i" 
+ KESCPI_VAL_TERMCHAR_AUTO (0)
+  ""
+
+ KESCPI_VAL_TERMCHAR_CR (13)
+  ""
+
+ KESCPI_VAL_TERMCHAR_LFCR (14)
+  ""
+
+ KESCPI_VAL_TERMCHAR_LF (10)
+  ""
+
+ KESCPI_VAL_TERMCHAR_CRLF (11)
+  ""
+
+
+v attrSimStateRangeTable DataType="i" 
+ KESCPI_VAL_SIM_STATE_READY (1)
+  ""
+
+ KESCPI_VAL_SIM_STATE_IN_QUERY (2)
+  ""
+
+
+v Boolean_values DataType="i" 
+ VI_TRUE (1)
+  "True"
+
+ VI_FALSE (0)
+  "False"
+
+
+v attrRs232BaudRateRangeTable DataType="i" 
+ 110 (110)
+  ""
+
+ 300 (300)
+  ""
+
+ 1200 (1200)
+  ""
+
+ 2400 (2400)
+  ""
+
+ 4800 (4800)
+  ""
+
+ 9600 (9600)
+  ""
+
+ 19200 (19200)
+  ""
+
+ 38400 (38400)
+  ""
+
+ 57600 (57600)
+  ""
+
+ 115200 (115200)
+  ""
+
+ 230400 (230400)
+  ""
+
+ 460800 (460800)
+  ""
+
+ 921600 (921600)
+  ""
+
+
+v attrRs232DataBitsRangeTable DataType="i" 
+ 4 (4)
+  ""
+
+ 5 (5)
+  ""
+
+ 6 (6)
+  ""
+
+ 7 (7)
+  ""
+
+ 8 (8)
+  ""
+
+
+0 KESCPI_SetAttributeViInt32 3 4 false s DataType="ViInt32" 
+0 KESCPI_GetAttributeViInt32 3 4 false g DataType="ViInt32" 
+0 KESCPI_CheckAttributeViInt32 3 4 false s DataType="ViInt32" 
+0 KESCPI_SetAttributeViReal64 3 4 false s DataType="ViReal64" 
+0 KESCPI_GetAttributeViReal64 3 4 false g DataType="ViReal64" 
+0 KESCPI_CheckAttributeViReal64 3 4 false s DataType="ViReal64" 
+0 KESCPI_SetAttributeViSession 3 4 false s DataType="ViSession" 
+0 KESCPI_GetAttributeViSession 3 4 false g DataType="ViSession" 
+0 KESCPI_CheckAttributeViSession 3 4 false s DataType="ViSession" 
+0 KESCPI_SetAttributeViBoolean 3 4 false s DataType="ViBoolean" 
+0 KESCPI_GetAttributeViBoolean 3 4 false g DataType="ViBoolean" 
+0 KESCPI_CheckAttributeViBoolean 3 4 false s DataType="ViBoolean" 
+0 KESCPI_SetAttributeViString 3 4 false s DataType="ViString" 
+0 KESCPI_GetAttributeViString 3 5 false g DataType="ViString" 
+0 KESCPI_CheckAttributeViString 3 4 false s DataType="ViString" 
+
+1 all "Inherent IVI Attributes" 
+ "Attributes common to all IVI instrument drivers."
+
+2 all "User Options" 
+ "Attributes you can set to affect the operation of this instrument driver.\n"
+ "    "
+
+3 all "Range Check" KESCPI_ATTR_RANGE_CHECK ViBoolean gs Boolean_values 
+ "Specifies whether to validate attribute values and function parameters.  "
+ "If enabled, the instrument driver validates the parameter values that you "
+ "pass to driver functions.  Range checking parameters is very useful for "
+ "debugging.  After you validate your program, you can set this attribute to "
+ "VI_FALSE to disable range checking and maximize performance.\n"
+ "    The default value is VI_TRUE.   Use the KESCPI_InitWithOptions "
+ "function to override this value.\n"
+ "    "
+
+3 all "Query Instrument Status" KESCPI_ATTR_QUERY_INSTR_STATUS ViBoolean gs Boolean_values 
+ "Specifies whether the instrument driver queries the instrument status "
+ "after each operation.  Querying the instrument status is very useful for "
+ "debugging.  After you validate your program, you can set this attribute to "
+ "VI_FALSE to disable status checking and maximize performance\n"
+ "    The instrument driver can choose to ignore status checking for "
+ "particular attributes regardless of the setting of this attribute.\n"
+ "    The default value is VI_TRUE.   Use the KESCPI_InitWithOptions "
+ "function to override this value.\n"
+ "    "
+
+3 all "Cache" KESCPI_ATTR_CACHE ViBoolean gs Boolean_values 
+ "Specifies whether to cache the value of attributes.  When caching is "
+ "enabled, the instrument driver keeps track of the current instrument "
+ "settings and avoids sending redundant commands to the instrument.  Thus, "
+ "you can significantly increase execution speed.\n"
+ "    The instrument driver can choose always to cache or never to cache "
+ "particular attributes regardless of the setting of this attribute.\n"
+ "    The default value is VI_TRUE.   Use the KESCPI_InitWithOptions "
+ "function to override this value.\n"
+ "    "
+
+3 all "Simulate" KESCPI_ATTR_SIMULATE ViBoolean gs Boolean_values 
+ "Specifies whether or not to simulate instrument driver I/O operations.  If "
+ "simulation is enabled, instrument driver functions perform range checking "
+ "and call Ivi_GetAttribute and Ivi_SetAttribute functions, but they do not "
+ "perform instrument I/O.  For output parameters that represent instrument "
+ "data, the instrument driver functions return calculated values.\n"
+ "    The default value is VI_FALSE.   Use the KESCPI_InitWithOptions "
+ "function to override this value.\n"
+ "    "
+
+3 all "Record Value Coercions" KESCPI_ATTR_RECORD_COERCIONS ViBoolean gs Boolean_values 
+ "Specifies whether the IVI engine keeps a list of the value coercions it "
+ "makes for ViInt32 and ViReal64 attributes.  You call "
+ "KESCPI_GetNextCoercionRecord to extract and delete the oldest coercion "
+ "record from the list.\n"
+ "    The default value is VI_FALSE.   Use the KESCPI_InitWithOptions "
+ "function to override this value.\n"
+ "    "
+
+2 all "Driver Identification" 
+ "Attributes that provide identity and version information about this "
+ "instrument driver.\n"
+ "    "
+
+3 all "Description" KESCPI_ATTR_SPECIFIC_DRIVER_DESCRIPTION ViString g 
+ "A string that contains a brief description of the specific driver\n"
+ "    "
+
+3 all "Driver Prefix" KESCPI_ATTR_SPECIFIC_DRIVER_PREFIX ViString g 
+ "A string that contains the prefix for the instrument driver.  The name of "
+ "each user-callable function in this driver starts with this prefix.\n"
+ "    "
+
+3 all "Driver Vendor" KESCPI_ATTR_SPECIFIC_DRIVER_VENDOR ViString g 
+ "A string that contains the name of the vendor that supplies this driver.\n"
+ "    "
+
+3 all "Major Version" KESCPI_ATTR_SPECIFIC_DRIVER_MAJOR_VERSION ViInt32 g 
+ "The major version number of this instrument driver.\n"
+ "    "
+
+3 all "Minor Version" KESCPI_ATTR_SPECIFIC_DRIVER_MINOR_VERSION ViInt32 g 
+ "The minor version number of this instrument driver.\n"
+ "    "
+
+3 all "Revision" KESCPI_ATTR_SPECIFIC_DRIVER_REVISION ViString g 
+ "A string that contains additional version information about this "
+ "instrument driver.\n"
+ "    "
+
+3 all "Class Specification Major Version" KESCPI_ATTR_SPECIFIC_DRIVER_CLASS_SPEC_MAJOR_VERSION ViInt32 g 
+ "The major version number of the class specification with which this driver "
+ "is compliant.\n"
+ "    "
+
+3 all "Class Specification Minor Version" KESCPI_ATTR_SPECIFIC_DRIVER_CLASS_SPEC_MINOR_VERSION ViInt32 g 
+ "The minor version number of the class specification with which this driver "
+ "is compliant.\n"
+ "    "
+
+2 all "Driver Capabilities" 
+ "Attributes that provide information about the capabilities of this "
+ "instrument driver.\n"
+ "    "
+
+3 all "Supported Instrument Models" KESCPI_ATTR_SUPPORTED_INSTRUMENT_MODELS ViString g 
+ "Contains a model code of the instrument. For drivers that support more "
+ "than one device, this attribute contains a comma-separated list of "
+ "supported instrument models.\n"
+ "    "
+
+3 all "Class Group Capabilities" KESCPI_ATTR_GROUP_CAPABILITIES ViString g 
+ "A string that contains a comma-separated list of class-extention groups "
+ "that this driver implements.\n"
+ "    "
+
+3 all "Number of Channels" KESCPI_ATTR_NUM_CHANNELS ViInt32 g 
+ "Indicates the number of channels that the specific instrument driver "
+ "supports.  \n"
+ "    For each attribute for which the IVI_VAL_MULTI_CHANNEL flag attribute "
+ "is set, the IVI engine maintains a separate cache value for each channel.\n"
+ "    "
+
+2 all "Instrument Identification" 
+ "Attributes that provide identity information about the instrument that you "
+ "are using.    "
+
+3 all "Manufacturer" KESCPI_ATTR_INSTRUMENT_MANUFACTURER ViString g 
+ "A string that contains the name of the instrument manufacturer you are "
+ "currently using.\n"
+ "    "
+
+3 all "Model" KESCPI_ATTR_INSTRUMENT_MODEL ViString g 
+ "A string that contains the model number or name of the instrument that you "
+ "are currently using.\n"
+ "    "
+
+3 all "Firmware Revision" KESCPI_ATTR_INSTRUMENT_FIRMWARE_REVISION ViString g 
+ "A string that contains the firmware revision information for the "
+ "instrument you are currently using.\n"
+ "    "
+
+2 all "Error Info" 
+ "Attributes for error information.\n"
+ "    "
+
+3 all "Primary Error" KESCPI_ATTR_PRIMARY_ERROR ViInt32 gs 
+ "A code that describes the first error that occurred since the last call to "
+ "KESCPI_GetErrorInfo on the session.  The value follows the VXIplug&play "
+ "completion code conventions.  A negative value describes an error "
+ "condition.  A positive value describes a warning condition and indicates "
+ "that no error occurred.  A zero indicates that no error or warning "
+ "occurred. The error and warning values can be status codes defined by IVI, "
+ "VISA, class drivers, or specific drivers.\n"
+ "    "
+
+3 all "Secondary Error" KESCPI_ATTR_SECONDARY_ERROR ViInt32 gs 
+ "An optional code that provides additional information concerning the "
+ "primary error condition.  The error and warning values can be status codes "
+ "defined by IVI, VISA, class drivers, or specific drivers.  Zero indicates "
+ "no additional information.\n"
+ "    "
+
+3 all "Error Elaboration" KESCPI_ATTR_ERROR_ELABORATION ViString gs 
+ "An optional string that contains additional information concerning the "
+ "primary error condition.\n"
+ "    "
+
+2 all "Advanced Session Information" 
+ "Attributes that contain additional information concerning the instrument "
+ "driver session.      "
+
+3 all "Logical Name" KESCPI_ATTR_LOGICAL_NAME ViString g 
+ "A string containing the logical name you specified when opening the "
+ "current IVI session.\n"
+ "     You may pass a logical name to the KESCPI_init or "
+ "KESCPI_InitWithOptions functions.  The IVI Configuration utility must "
+ "contain an entry for the logical name.  The logical name entry refers to a "
+ "virtual instrument section in the IVI Configuration file.  The virtual "
+ "instrument section specifies a physical device and initial user options.\n"
+ "    "
+
+3 all "Resource Descriptor" KESCPI_ATTR_RESOURCE_DESCRIPTOR ViString g 
+ "Indicates the resource descriptor the driver uses to identify the physical "
+ "device.\n"
+ "    If you initialize the driver with a logical name, this attribute "
+ "contains the resource descriptor that corresponds to the entry in the IVI "
+ "Configuration utility.  \n"
+ "    If you initialize the instrument driver with the resource descriptor, "
+ "this attribute contains that value.\n"
+ "    "
+
+3 all "I/O Session Type" KESCPI_ATTR_IO_SESSION_TYPE ViString g 
+ "Contains the type of the I/O session that this driver uses to communicate "
+ "with the instrument.     "
+
+3 all "Instrument I/O Session" KESCPI_ATTR_IO_SESSION ViSession g 
+ "Specifies the I/O session that the specific driver uses to communicate "
+ "with the instrument.\n"
+ "    "
+
+1 all "Configuration" 
+ "Configure the communication parameters and SCPI commands"
+
+2 all "Communication" 
+ ""
+
+3 all "Termination character" KESCPI_ATTR_RS232_TERMINATION_CHAR ViInt32 gs attrRs232TerminationCharRangeTable 
+ "Specify the termination character for RS-232 communications."
+
+2 all "SCPI Command" 
+ ""
+
+3 all "Error Query SCPI Command" KESCPI_ATTR_ERROR_QUERY_COMMAND ViString gs 
+ "Specify the error query SCPI command."
+
+1 all "Miscellaneous Attributes" 
+ "Additional Attributes."
+
+2 all "Hidden Attributes (not user-viewable)" 
+ "    "
+
+3 all "OPC Callback Timeout" KESCPI_ATTR_OPC_TIMEOUT ViInt32 hidden 
+ "This attribute is hidden.  The driver uses this attribute internally to "
+ "set the timeout for the OPC callback.\n"
+ "    "
+
+3 all "Simulat Data Buffer" KESCPI_ATTR_SIM_DATA_BUFFER ViAddr hidden 
+ "Stores a pointer to 2500 buffer entries. This buffer is allocated once on "
+ "first use using Ivi buf alloc. (The IVI engine automatically destroys such "
+ "a buffer when the session terminates.)"
+
+3 all "Sim Write Data Cache" KESCPI_ATTR_SIM_WRITE_DATA_CACHE ViString hidden 
+ "Last data passed to WriteInstrData if simulating"
+
+3 all "SIM STATE" KESCPI_ATTR_SIM_STATE ViInt32 hidden attrSimStateRangeTable 
+ "Simulatation State"
+
+3 all "KESCPI_ATTR_SIM_ERROR_QUEUE" KESCPI_ATTR_SIM_ERROR_QUEUE ViString hidden 
+ ""
+
+3 all "KESCPI_ATTR_SCPI_CLS" KESCPI_ATTR_SCPI_CLS ViInt32 hidden 
+ ""
+
+3 all "KESCPI_ATTR_SCPI_IDN" KESCPI_ATTR_SCPI_IDN ViString hidden 
+ ""
+
+3 all "KESCPI_ATTR_SCPI_OPC" KESCPI_ATTR_SCPI_OPC ViInt32 hidden 
+ ""
+
+3 all "KESCPI_ATTR_SCPI_RST" KESCPI_ATTR_SCPI_RST ViInt32 hidden 
+ ""
+
+3 all "KESCPI_ATTR_SCPI_FORM_DATA" KESCPI_ATTR_SCPI_FORM_DATA ViString hidden 
+ ""
+
+3 all "KESCPI_ATTR_SCPI_FORM_BORD" KESCPI_ATTR_SCPI_FORM_BORD ViString hidden 
+ ""
+
+3 all "KESCPI_ATTR_SCPI_FORM_ELEM" KESCPI_ATTR_SCPI_FORM_ELEM ViString hidden 
+ ""
+
+3 all "KESCPI_ATTR_SCPI_FORM_SOUR2" KESCPI_ATTR_SCPI_FORM_SOUR2 ViString hidden 
+ ""
+
+3 all ":SOUR2:TTL:LEV" KESCPI_ATTR_SCPI_SOUR2_TTL_LEV ViString hidden 
+ ""
+
+3 all "KESCPI_ATTR_SCPI_SYST_ERR" KESCPI_ATTR_SCPI_SYST_ERR ViString hidden 
+ ""
+
+3 all "KESCPI_ATTR_SCPI_SYST_CLE" KESCPI_ATTR_SCPI_SYST_CLE ViInt32 hidden 
+ ""
+
+3 all "KESCPI_ATTR_SCPI_TRAC_CLE" KESCPI_ATTR_SCPI_TRAC_CLE ViInt32 hidden 
+ ""
+
+3 all "KESCPI_ATTR_SCPI_TRAC_POIN" KESCPI_ATTR_SCPI_TRAC_POIN ViInt32 hidden 
+ ""
+
+3 all "KESCPI_ATTR_SCPI_TRAC_POIN_ACT" KESCPI_ATTR_SCPI_TRAC_POIN_ACT ViInt32 hidden 
+ ""
+
+3 all "KESCPI_ATTR_SCPI_INIT" KESCPI_ATTR_SCPI_INIT ViInt32 hidden 
+ ""
+
+3 all "KESCPI_ATTR_SCPI_TRIG_CLE" KESCPI_ATTR_SCPI_TRIG_CLE ViInt32 hidden 
+ ""
+
+3 all "KESCPI_ATTR_SCPI_TRIG_COUN" KESCPI_ATTR_SCPI_TRIG_COUN ViInt32 hidden 
+ ""
+
+3 all "KESCPI_ATTR_SCPI_TRAC_DATA" KESCPI_ATTR_SCPI_TRAC_DATA ViString hidden 
+ ""
+
+3 all "KESCPI_ATTR_SCPI_WAI" KESCPI_ATTR_SCPI_WAI ViInt32 hidden 
+ ""
+

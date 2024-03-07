@@ -1,0 +1,31 @@
+
+IVI Compliance Category:
+-----------------------
+
+IVI-C IviScope Class Instrument Driver
+Class Specification version:		3.00
+
+
+
+Driver Identification:
+---------------------
+
+Driver Revision: 			3.0
+Driver Vendor: 				National Instruments
+Prefix: 				IviScope
+Description: 				Class driver for IviScope
+
+
+
+Software Information:
+---------------------
+
+Support Software Required: 		National Instruments IVI Compliance Package ver 4.1 or later
+					VISA 4.6
+Source Code Availability: 		Source code is not available. 
+
+
+
+
+
+Note: Class driver help is located in the ...\National Instruments\IVI\Help directory on your system.

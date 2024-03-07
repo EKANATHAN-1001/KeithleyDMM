@@ -1,0 +1,1140 @@
+FPAttributeValueFile
+n SubType="IVI"
+n SubVersion="1"
+
+v Function DataType="i"
+ KEDMM6500_VAL_DC_VOLTS (1)
+  "Sets the DMM to measure DC voltage."
+
+ KEDMM6500_VAL_AC_VOLTS (2)
+  "Sets the DMM to measure AC voltage."
+
+ KEDMM6500_VAL_DC_CURRENT (3)
+  "Sets the DMM to measure DC current.."
+
+ KEDMM6500_VAL_AC_CURRENT (4)
+  "Sets the DMM to measure AC current."
+
+ KEDMM6500_VAL_2_WIRE_RES (5)
+  "Sets the DMM to measure 2-wire resistance."
+
+ KEDMM6500_VAL_4_WIRE_RES (101)
+  "Sets the DMM to measure 4-wire resistance."
+
+ KEDMM6500_VAL_FREQ (104)
+  "Sets the DMM to measure frequency."
+
+ KEDMM6500_VAL_PERIOD (105)
+  "Sets the DMM to measure period."
+
+ KEDMM6500_VAL_AC_PLUS_DC_VOLTS (106)
+  "Sets the DMM to measure AC plus DC voltage."
+
+ KEDMM6500_VAL_AC_PLUS_DC_CURRENT (107)
+  "Sets the DMM to measure AC plus DC current."
+
+ KEDMM6500_VAL_TEMPERATURE (108)
+  "Sets the DMM to measure temperature."
+
+
+v ApertureTimeUnits DataType="i"
+ KEDMM6500_VAL_SECONDS (0)
+  "Units for the value returned by Aperture Time are seconds."
+
+ KEDMM6500_VAL_POWER_LINE_CYCLES (1)
+  "Units for the value returned by Aperture Time are Power Line Cycles."
+
+
+v AutoZero DataType="i"
+ KEDMM6500_VAL_AUTO_ZERO_OFF (0)
+  "Disables the auto-zero feature."
+
+ KEDMM6500_VAL_AUTO_ZERO_ON (1)
+  "The DMM to take a Zero Reading for each measurement."
+
+ KEDMM6500_VAL_AUTO_ZERO_ONCE (2)
+  "The DMM takes one a Zero Reading immediately and then disables the auto-zero feature."
+
+
+v MeasCompleteDest DataType="i"
+ KEDMM6500_VAL_EXTERNAL (2)
+  "Routes the measurement complete signal to the external connector."
+
+ KEDMM6500_VAL_TTL0 (111)
+  "Routes the measurement complete signal to TTL0."
+
+ KEDMM6500_VAL_TTL1 (112)
+  "Routes the measurement complete signal to TTL1."
+
+ KEDMM6500_VAL_TTL2 (113)
+  "Routes the measurement complete signal to TTL2."
+
+ KEDMM6500_VAL_TTL3 (114)
+  "Routes the measurement complete signal to TTL3."
+
+ KEDMM6500_VAL_TTL4 (115)
+  "Routes the measurement complete signal to TTL4."
+
+ KEDMM6500_VAL_TTL5 (116)
+  "Routes the measurement complete signal to TTL5."
+
+ KEDMM6500_VAL_TTL6 (117)
+  "Routes the measurement complete signal to TTL6."
+
+ KEDMM6500_VAL_TTL7 (118)
+  "Routes the measurement complete signal to TTL7."
+
+ KEDMM6500_VAL_ECL0 (119)
+  "Routes the measurement complete signal to ECL0."
+
+ KEDMM6500_VAL_ECL1 (120)
+  "Routes the measurement complete signal to ECL1."
+
+ KEDMM6500_VAL_PXI_STAR (131)
+  "Routes the measurement complete signal to the PXI Star trigger bus."
+
+ KEDMM6500_VAL_RTSI_0 (140)
+  "Routes the measurement complete signal to RTSI0."
+
+ KEDMM6500_VAL_RTSI_1 (141)
+  "Routes the measurement complete signal to RTSI1."
+
+ KEDMM6500_VAL_RTSI_2 (142)
+  "Routes the measurement complete signal to RTSI2."
+
+ KEDMM6500_VAL_RTSI_3 (143)
+  "Routes the measurement complete signal to RTSI3."
+
+ KEDMM6500_VAL_RTSI_4 (144)
+  "Routes the measurement complete signal to RTSI4."
+
+ KEDMM6500_VAL_RTSI_5 (145)
+  "Routes the measurement complete signal to RTSI5."
+
+ KEDMM6500_VAL_RTSI_6 (146)
+  "Routes the measurement complete signal to RTSI6."
+
+ KEDMM6500_VAL_NONE (-1)
+  "The measurement complete signal is not routed."
+
+
+v SampleTrigger DataType="i"
+ KEDMM6500_VAL_IMMEDIATE (1)
+  "The DMM exits the Wait-For-Sample-Trigger state immediately after entering. It does "
+  "not wait for a trigger of any kind."
+
+ KEDMM6500_VAL_EXTERNAL (2)
+  "The DMM exits the Wait-For-Sample-Trigger state when a trigger occurs on the external "
+  "trigger input."
+
+ KEDMM6500_VAL_SOFTWARE_TRIG (3)
+  "The DMM exits the Wait-For-Sample-Trigger state when the Send Software Trigger function "
+  "executes."
+
+ KEDMM6500_VAL_INTERVAL (10)
+  "The DMM exits the Wait-For-Sample-Trigger state when the length of time specified "
+  "by the Sample Interval attribute elapses."
+
+ KEDMM6500_VAL_TTL0 (111)
+  "The DMM exits the Wait-For-Sample-Trigger state when it receives a trigger on TTL0."
+
+ KEDMM6500_VAL_TTL1 (112)
+  "The DMM exits the Wait-For-Sample-Trigger state when it receives a trigger on TTL1."
+
+ KEDMM6500_VAL_TTL2 (113)
+  "The DMM exits the Wait-For-Sample-Trigger state when it receives a trigger on TTL2."
+
+ KEDMM6500_VAL_TTL3 (114)
+  "The DMM exits the Wait-For-Sample-Trigger state when it receives a trigger on TTL3."
+
+ KEDMM6500_VAL_TTL4 (115)
+  "The DMM exits the Wait-For-Sample-Trigger state when it receives a trigger on TTL4."
+
+ KEDMM6500_VAL_TTL5 (116)
+  "The DMM exits the Wait-For-Sample-Trigger state when it receives a trigger on TTL5."
+
+ KEDMM6500_VAL_TTL6 (117)
+  "The DMM exits the Wait-For-Sample-Trigger state when it receives a trigger on TTL6."
+
+ KEDMM6500_VAL_TTL7 (118)
+  "The DMM exits the Wait-For-Sample-Trigger state when it receives a trigger on TTL7."
+
+ KEDMM6500_VAL_ECL0 (119)
+  "The DMM exits the Wait-For-Sample-Trigger state when it receives a trigger on ECL0."
+
+ KEDMM6500_VAL_ECL1 (120)
+  "The DMM exits the Wait-For-Sample-Trigger state when it receives a trigger on ECL1."
+
+ KEDMM6500_VAL_PXI_STAR (131)
+  "The DMM exits the Wait-For-Sample-Trigger state when it receives a trigger on the "
+  "PXI Star trigger bus."
+
+ KEDMM6500_VAL_RTSI_0 (140)
+  "The DMM exits the Wait-For-Sample-Trigger state when it receives a trigger on RTSI0."
+
+ KEDMM6500_VAL_RTSI_1 (141)
+  "The DMM exits the Wait-For-Sample-Trigger state when it receives a trigger on RTSI1."
+
+ KEDMM6500_VAL_RTSI_2 (142)
+  "The DMM exits the Wait-For-Sample-Trigger state when it receives a trigger on RTSI2."
+
+ KEDMM6500_VAL_RTSI_3 (143)
+  "The DMM exits the Wait-For-Sample-Trigger state when it receives a trigger on RTSI3."
+
+ KEDMM6500_VAL_RTSI_4 (144)
+  "The DMM exits the Wait-For-Sample-Trigger state when it receives a trigger on RTSI4."
+
+ KEDMM6500_VAL_RTSI_5 (145)
+  "The DMM exits the Wait-For-Sample-Trigger state when it receives a trigger on RTSI5."
+
+ KEDMM6500_VAL_RTSI_6 (146)
+  "The DMM exits the Wait-For-Sample-Trigger state when it receives a trigger on RTSI6."
+
+
+v TransducerType DataType="i"
+ KEDMM6500_VAL_THERMOCOUPLE (1)
+  "Sets the DMM to measure temperature using a thermocouple."
+
+ KEDMM6500_VAL_THERMISTOR (2)
+  "Sets the DMM to measure temperature using a thermistor."
+
+ KEDMM6500_VAL_2_WIRE_RTD (3)
+  "Sets the DMM to measure temperature using a 2-wire temperature resistance device."
+
+ KEDMM6500_VAL_4_WIRE_RTD (4)
+  "Sets the DMM to measure temperature using a 4-wire temperature resistance device."
+
+
+v RefJunctionType DataType="i"
+ KEDMM6500_VAL_TEMP_REF_JUNC_INTERNAL (1)
+  "Sets the DMM to use an internal sensor at the thermocouple junction for the junction "
+  "compensation."
+
+ KEDMM6500_VAL_TEMP_REF_JUNC_FIXED (2)
+  "Sets the DMM to use an internal sensor at the thermocouple junction for the junction "
+  "compensation."
+
+
+v ThermocoupleType DataType="i"
+ KEDMM6500_VAL_TEMP_TC_B (1)
+  "Sets the DMM to measure temperature from a B-type thermocouple."
+
+ KEDMM6500_VAL_TEMP_TC_C (2)
+  "Sets the DMM to measure temperature from a C-type thermocouple."
+
+ KEDMM6500_VAL_TEMP_TC_D (3)
+  "Sets the DMM to measure temperature from a D-type thermocouple."
+
+ KEDMM6500_VAL_TEMP_TC_E (4)
+  "Sets the DMM to measure temperature from a E-type thermocouple."
+
+ KEDMM6500_VAL_TEMP_TC_G (5)
+  "Sets the DMM to measure temperature from a G-type thermocouple."
+
+ KEDMM6500_VAL_TEMP_TC_J (6)
+  "Sets the DMM to measure temperature from a J-type thermocouple."
+
+ KEDMM6500_VAL_TEMP_TC_K (7)
+  "Sets the DMM to measure temperature from a K-type thermocouple."
+
+ KEDMM6500_VAL_TEMP_TC_N (8)
+  "Sets the DMM to measure temperature from a N-type thermocouple."
+
+ KEDMM6500_VAL_TEMP_TC_R (9)
+  "Sets the DMM to measure temperature from a R-type thermocouple."
+
+ KEDMM6500_VAL_TEMP_TC_S (10)
+  "Sets the DMM to measure temperature from a S-type thermocouple."
+
+ KEDMM6500_VAL_TEMP_TC_T (11)
+  "Sets the DMM to measure temperature from a T-type thermocouple."
+
+ KEDMM6500_VAL_TEMP_TC_U (12)
+  "Sets the DMM to measure temperature from a U-type thermocouple."
+
+ KEDMM6500_VAL_TEMP_TC_V (13)
+  "Sets the DMM to measure temperature from a V-type thermocouple."
+
+
+v TriggerSlope DataType="i"
+ KEDMM6500_VAL_POSITIVE (0)
+  "Sets the trigger event to occur on the rising edge of the trigger pulse."
+
+ KEDMM6500_VAL_NEGATIVE (1)
+  "Sets the trigger event to occur on the rising edge of the trigger pulse."
+
+
+v TriggerSource DataType="i"
+ KEDMM6500_VAL_IMMEDIATE (1)
+  "The DMM exits the Wait-For-Trigger state immediately after entering. It does not "
+  "wait for a trigger of any kind."
+
+ KEDMM6500_VAL_EXTERNAL (2)
+  "The DMM exits the Wait-For-Trigger state when a trigger occurs on the external trigger "
+  "input."
+
+ KEDMM6500_VAL_SOFTWARE_TRIG (3)
+  "The DMM exits the Wait-For-Trigger state when the Send Software Trigger function "
+  "executes."
+
+ KEDMM6500_VAL_TTL0 (111)
+  "The DMM exits the Wait-For-Trigger state when it receives a trigger on TTL0."
+
+ KEDMM6500_VAL_TTL1 (112)
+  "The DMM exits the Wait-For-Trigger state when it receives a trigger on TTL1."
+
+ KEDMM6500_VAL_TTL2 (113)
+  "The DMM exits the Wait-For-Trigger state when it receives a trigger on TTL2."
+
+ KEDMM6500_VAL_TTL3 (114)
+  "The DMM exits the Wait-For-Trigger state when it receives a trigger on TTL3."
+
+ KEDMM6500_VAL_TTL4 (115)
+  "The DMM exits the Wait-For-Trigger state when it receives a trigger on TTL4."
+
+ KEDMM6500_VAL_TTL5 (116)
+  "The DMM exits the Wait-For-Trigger state when it receives a trigger on TTL5."
+
+ KEDMM6500_VAL_TTL6 (117)
+  "The DMM exits the Wait-For-Trigger state when it receives a trigger on TTL6."
+
+ KEDMM6500_VAL_TTL7 (118)
+  "The DMM exits the Wait-For-Trigger state when it receives a trigger on TTL7."
+
+ KEDMM6500_VAL_ECL0 (119)
+  "The DMM exits the Wait-For-Trigger state when it receives a trigger on ECL0."
+
+ KEDMM6500_VAL_ECL1 (120)
+  "The DMM exits the Wait-For-Trigger state when it receives a trigger on ECL1."
+
+ KEDMM6500_VAL_PXI_STAR (131)
+  "The DMM exits the Wait-For-Trigger state when it receives a trigger on the PXI Star "
+  "trigger bus."
+
+ KEDMM6500_VAL_RTSI_0 (140)
+  "The DMM exits the Wait-For-Trigger state when it receives a trigger on RTSI0."
+
+ KEDMM6500_VAL_RTSI_1 (141)
+  "The DMM exits the Wait-For-Trigger state when it receives a trigger on RTSI1."
+
+ KEDMM6500_VAL_RTSI_2 (142)
+  "The DMM exits the Wait-For-Trigger state when it receives a trigger on RTSI2."
+
+ KEDMM6500_VAL_RTSI_3 (143)
+  "The DMM exits the Wait-For-Trigger state when it receives a trigger on RTSI3."
+
+ KEDMM6500_VAL_RTSI_4 (144)
+  "The DMM exits the Wait-For-Trigger state when it receives a trigger on RTSI4."
+
+ KEDMM6500_VAL_RTSI_5 (145)
+  "The DMM exits the Wait-For-Trigger state when it receives a trigger on RTSI5."
+
+ KEDMM6500_VAL_RTSI_6 (146)
+  "The DMM exits the Wait-For-Trigger state when it receives a trigger on RTSI6."
+
+
+v Function1 DataType="i"
+ KEDMM6500_VAL_FUNCTION_CURRENT3 (0)
+  "Current."
+
+ KEDMM6500_VAL_FUNCTION_RESISTANCE3 (2)
+  "Resistance."
+
+ KEDMM6500_VAL_FUNCTION_VOLTAGE3 (1)
+  "Voltage."
+
+ KEDMM6500_VAL_FUNCTION4_WIRE_RESISTANCE2 (3)
+
+ KEDMM6500_VAL_FUNCTION_CURRENTAC2 (4)
+
+ KEDMM6500_VAL_FUNCTION_VOLTAGEAC2 (5)
+
+ KEDMM6500_VAL_FUNCTION_TEMPERATURE2 (6)
+
+ KEDMM6500_VAL_FUNCTION_FREQUENCY2 (7)
+
+ KEDMM6500_VAL_FUNCTION_PERIOD2 (8)
+
+ KEDMM6500_VAL_FUNCTION_CONTINUITY2 (9)
+
+ KEDMM6500_VAL_FUNCTION_CAPACITANCE2 (10)
+
+ KEDMM6500_VAL_FUNCTION_DIODE2 (11)
+
+ KEDMM6500_VAL_FUNCTION_NONE2 (15)
+
+ KEDMM6500_VAL_FUNCTION_VOLTAGEDC_RATIO2 (14)
+
+
+v FanLevel DataType="i"
+ KEDMM6500_VAL_FAN_LEVEL_NORMAL (0)
+
+ KEDMM6500_VAL_FAN_LEVEL_QUIET (1)
+
+
+v ProgrammingLanguage DataType="i"
+ KEDMM6500_VAL_PROGRAMMING_LANGUAGETSP2 (0)
+
+ KEDMM6500_VAL_PROGRAMMING_LANGUAGESCPI2 (1)
+
+
+v SystemAccessType DataType="i"
+ KEDMM6500_VAL_SYSTEM_ACCESS_TYPE_FULL3 (0)
+  "Full access for all users from all interfaces."
+
+ KEDMM6500_VAL_SYSTEM_ACCESS_TYPE_EXCLUSIVE3 (1)
+  "Allows access by one remote interface at a time with login and logout required from "
+  "other interfaces."
+
+ KEDMM6500_VAL_SYSTEM_ACCESS_TYPE_PROTECTED3 (2)
+  "Allows access by one remote interface at a time with passwords required on all interfaces."
+
+ KEDMM6500_VAL_SYSTEM_ACCESS_TYPE_LOCKOUT3 (3)
+  "Allows access by one interface at a time (including the front panel) with passwords "
+  "required on all interfaces."
+
+
+v SystemPowerLineFrequency DataType="i"
+ KEDMM6500_VAL_SYSTEM_POWER_LINE_FREQUENCY5022 (0)
+  "Power line frequency is 50Hz."
+
+ KEDMM6500_VAL_SYSTEM_POWER_LINE_FREQUENCY6022 (1)
+  "Power line frequency is 60Hz."
+
+
+v SystemPowerOn DataType="i"
+ KEDMM6500_VAL_SYSTEM_POWER_ONRST3 (0)
+  "Power-up to *RST."
+
+ KEDMM6500_VAL_SYSTEM_POWER_ONSAV10 (1)
+  "Stored setup 0(i.e. SAV0)."
+
+ KEDMM6500_VAL_SYSTEM_POWER_ONSAV11 (2)
+  "Stored setup 1(i.e. SAV1)."
+
+ KEDMM6500_VAL_SYSTEM_POWER_ONSAV12 (3)
+  "Stored setup 2(i.e. SAV2)."
+
+ KEDMM6500_VAL_SYSTEM_POWER_ONSAV13 (4)
+  "Stored setup 3(i.e. SAV3)."
+
+ KEDMM6500_VAL_SYSTEM_POWER_ONSAV14 (5)
+  "Stored setup 4(i.e. SAV4)."
+
+
+v SystemTerminal DataType="i"
+ KEDMM6500_VAL_SYSTEM_TERMINAL_FRONT3 (0)
+  "Measure using the front-panel input and output terminals."
+
+ KEDMM6500_VAL_SYSTEM_TERMINAL_REAR3 (1)
+  "Measure using the rear-panel input and output terminals."
+
+
+v InputImpedance DataType="i"
+ KEDMM6500_VAL_INPUT_IMPEDANCE_TEN_MEGA_OHMS2 (0)
+
+ KEDMM6500_VAL_INPUT_IMPEDANCE_AUTO2 (1)
+
+
+v ThermocoupleType2 DataType="i"
+ KEDMM6500_VAL_TEMP_TC_B3 (1)
+  "Sets the DMM to measure temperature from a B-type thermocouple."
+
+ KEDMM6500_VAL_TEMP_TC_E3 (4)
+  "Sets the DMM to measure temperature from a E-type thermocouple."
+
+ KEDMM6500_VAL_TEMP_TC_J3 (6)
+  "Sets the DMM to measure temperature from a J-type thermocouple."
+
+ KEDMM6500_VAL_TEMP_TC_K3 (7)
+  "Sets the DMM to measure temperature from a K-type thermocouple."
+
+ KEDMM6500_VAL_TEMP_TC_N3 (8)
+  "Sets the DMM to measure temperature from a N-type thermocouple."
+
+ KEDMM6500_VAL_TEMP_TC_R3 (9)
+  "Sets the DMM to measure temperature from a R-type thermocouple."
+
+ KEDMM6500_VAL_TEMP_TC_S3 (10)
+  "Sets the DMM to measure temperature from a S-type thermocouple."
+
+ KEDMM6500_VAL_TEMP_TC_T3 (11)
+  "Sets the DMM to measure temperature from a T-type thermocouple."
+
+
+v TransducerType2 DataType="i"
+ KEDMM6500_VAL_THERMOCOUPLE3 (1)
+  "Sets the DMM to measure temperature using a thermocouple."
+
+ KEDMM6500_VAL_THERMISTOR3 (2)
+  "Sets the DMM to measure temperature using a thermistor."
+
+ KEDMM6500_VAL_2_WIRE_RTD3 (3)
+  "Sets the DMM to measure temperature using a 2-wire temperature resistance device."
+
+ KEDMM6500_VAL_4_WIRE_RTD3 (4)
+  "Sets the DMM to measure temperature using a 4-wire temperature resistance device."
+
+
+v TemperatureUnit DataType="i"
+ KEDMM6500_VAL_TEMPERATURE_UNIT_KELVIN2 (0)
+
+ KEDMM6500_VAL_TEMPERATURE_UNIT_CELSIUS2 (1)
+
+ KEDMM6500_VAL_TEMPERATURE_UNIT_FAHRENHET2 (2)
+
+
+v ThermocoupleRefJunctionType DataType="i"
+ KEDMM6500_VAL_THERMOCOUPLE_REF_JUNCTION_TYPE_SIMULATED (0)
+
+ KEDMM6500_VAL_THERMOCOUPLE_REF_JUNCTION_TYPE_INTERNAL (1)
+
+ KEDMM6500_VAL_THERMOCOUPLE_REF_JUNCTION_TYPE_EXTERNAL (2)
+
+
+v RelativeOffsetMethod DataType="i"
+ KEDMM6500_VAL_RELATIVE_OFFSET_METHOD_AFTER_CALCULATION (0)
+
+ KEDMM6500_VAL_RELATIVE_OFFSET_METHOD_BEFORE_CALCULATION (1)
+
+
+v ByteOrderType DataType="i"
+ KEDMM6500_VAL_BYTE_ORDER_TYPE_NORMAL3 (0)
+  "Normal byte order."
+
+ KEDMM6500_VAL_BYTE_ORDER_TYPE_SWAPPED3 (1)
+  "Reverse byte order for binary formats."
+
+
+v DataFormatType DataType="i"
+ KEDMM6500_VAL_DATA_FORMAT_TYPE_ASCII3 (0)
+  "ASCii format."
+
+ KEDMM6500_VAL_DATA_FORMAT_TYPE_REAL3 (1)
+  "IEEE Std. 754 double-precision format."
+
+ KEDMM6500_VAL_DATA_FORMAT_TYPE_SREAL3 (2)
+  "IEEE Std. 754 single-precision format."
+
+
+v DisplayBrightness DataType="i"
+ KEDMM6500_VAL_DISPLAY_BRIGHTNESS10_0PERCENT3 (0)
+  "100%."
+
+ KEDMM6500_VAL_DISPLAY_BRIGHTNESS7_5PERCENT3 (1)
+  "75%."
+
+ KEDMM6500_VAL_DISPLAY_BRIGHTNESS5_0PERCENT3 (2)
+  "50%."
+
+ KEDMM6500_VAL_DISPLAY_BRIGHTNESS2_5PERCENT3 (3)
+  "25%."
+
+ KEDMM6500_VAL_DISPLAY_BRIGHTNESS_OFF3 (4)
+  "Display off."
+
+ KEDMM6500_VAL_DISPLAY_BRIGHTNESS_BLACK_OUT3 (5)
+  "Display and all indicators off."
+
+
+v DisplayReadingFormat DataType="i"
+ KEDMM6500_VAL_DISPLAY_READING_FORMAT_EXPONENT3 (0)
+  "Use exponent format."
+
+ KEDMM6500_VAL_DISPLAY_READING_FORMAT_PREFIX3 (1)
+  "Use leading zeros."
+
+
+v DisplayScreenName DataType="i"
+ KEDMM6500_VAL_DISPLAY_SCREEN_NAME_HOME3 (0)
+  "Home screen."
+
+ KEDMM6500_VAL_DISPLAY_SCREEN_NAME_USER3 (3)
+  "User Display swipe screen."
+
+ KEDMM6500_VAL_DISPLAY_SCREEN_NAME_STATISTICS3 (4)
+  "Buffer Statistics swipe screen."
+
+ KEDMM6500_VAL_DISPLAY_SCREEN_NAME_SETTINGS3 (5)
+  "Settings swipe screen."
+
+ KEDMM6500_VAL_DISPLAY_SCREEN_NAME_GRAPH3 (6)
+  "Graph screen."
+
+ KEDMM6500_VAL_DISPLAY_SCREEN_NAME_HOME_LARGE_READING2 (1)
+
+ KEDMM6500_VAL_DISPLAY_SCREEN_NAME_READING_TABLE2 (2)
+
+ KEDMM6500_VAL_DISPLAY_SCREEN_NAME_HISTOGRAM2 (7)
+
+ KEDMM6500_VAL_DISPLAY_SCREEN_NAME_SWIPE_FUNCTIONS2 (8)
+
+ KEDMM6500_VAL_DISPLAY_SCREEN_NAME_SWIPE_GRAPH2 (9)
+
+ KEDMM6500_VAL_DISPLAY_SCREEN_NAME_SWIPE_SECONDARY2 (10)
+
+
+v DigitizerFunction1 DataType="i"
+ KEDMM6500_VAL_DIGITIZER_FUNCTION1_CURRENTDC2 (0)
+
+ KEDMM6500_VAL_DIGITIZER_FUNCTION1_NONE2 (2)
+
+ KEDMM6500_VAL_DIGITIZER_FUNCTION1_VOLTAGEDC2 (1)
+
+
+v ChannelCloseCountInterval DataType="i"
+ KEDMM6500_VAL_CHANNEL_CLOSE_COUNT_INTERVAL1_MINUTE (0)
+
+ KEDMM6500_VAL_CHANNEL_CLOSE_COUNT_INTERVAL5_MINUTES (1)
+
+ KEDMM6500_VAL_CHANNEL_CLOSE_COUNT_INTERVAL10_MINUTES (2)
+
+ KEDMM6500_VAL_CHANNEL_CLOSE_COUNT_INTERVAL15_MINUTES (3)
+
+ KEDMM6500_VAL_CHANNEL_CLOSE_COUNT_INTERVAL30_MINUTES (4)
+
+ KEDMM6500_VAL_CHANNEL_CLOSE_COUNT_INTERVAL60_MINUTES (5)
+
+ KEDMM6500_VAL_CHANNEL_CLOSE_COUNT_INTERVAL24_HOURS (6)
+
+
+v ScanMode DataType="i"
+ KEDMM6500_VAL_SCAN_MODE_ALL (0)
+
+ KEDMM6500_VAL_SCAN_MODE_FIXEDABR (1)
+
+ KEDMM6500_VAL_SCAN_MODE_OPEN_SELECTIVE (2)
+
+
+v ScanMonitorMode DataType="i"
+ KEDMM6500_VAL_SCAN_MONITOR_MODE_OFF (0)
+  "Start the scan without waiting for a specific value"
+
+ KEDMM6500_VAL_SCAN_MONITOR_MODE_LOWER (1)
+  "Start the scan when the measurement is below the value set by Scan:Mode:LowerLimit"
+
+ KEDMM6500_VAL_SCAN_MONITOR_MODE_UPPER (2)
+  "Start the scan when the measurement exceeds the value set by Scan:Mode:UpperLimit"
+
+ KEDMM6500_VAL_SCAN_MONITOR_MODE_WINDOW (3)
+  "Start the scan when the measurement exceeds either the upper limit or is below the "
+  "lower limit"
+
+
+0 kedmm6500_GetAttributeViInt32 3 4 false g DataType="ViInt32"
+0 kedmm6500_SetAttributeViInt32 3 4 false s DataType="ViInt32"
+0 kedmm6500_CheckAttributeViInt32 3 4 false s DataType="ViInt32"
+0 kedmm6500_GetAttributeViInt64 3 4 false g DataType="ViInt64"
+0 kedmm6500_SetAttributeViInt64 3 4 false s DataType="ViInt64"
+0 kedmm6500_CheckAttributeViInt64 3 4 false s DataType="ViInt64"
+0 kedmm6500_GetAttributeViReal64 3 4 false g DataType="ViReal64"
+0 kedmm6500_SetAttributeViReal64 3 4 false s DataType="ViReal64"
+0 kedmm6500_CheckAttributeViReal64 3 4 false s DataType="ViReal64"
+0 kedmm6500_GetAttributeViSession 3 4 false g DataType="ViSession"
+0 kedmm6500_SetAttributeViSession 3 4 false s DataType="ViSession"
+0 kedmm6500_CheckAttributeViSession 3 4 false s DataType="ViSession"
+0 kedmm6500_GetAttributeViBoolean 3 4 false g DataType="ViBoolean"
+0 kedmm6500_SetAttributeViBoolean 3 4 false s DataType="ViBoolean"
+0 kedmm6500_CheckAttributeViBoolean 3 4 false s DataType="ViBoolean"
+0 kedmm6500_GetAttributeViString 3 5 false g DataType="ViString"
+0 kedmm6500_SetAttributeViString 3 4 false s DataType="ViString"
+0 kedmm6500_CheckAttributeViString 3 4 false s DataType="ViString"
+1 all "Inherent IVI Attributes"
+
+2 all "Advanced Session Information"
+
+3 all "Driver Setup" KEDMM6500_ATTR_DRIVER_SETUP ViString g 
+ "The driver setup string.  It is either specified in the Configuration Store or passed "
+ "in the OptionString parameter of the Initialize function.  Driver setup is empty "
+ "if the driver is not initialized."
+
+3 all "I/O Resource Descriptor" KEDMM6500_ATTR_IO_RESOURCE_DESCRIPTOR ViString g 
+ "The resource descriptor specifies the connection to a physical device.  It is either "
+ "specified in the Configuration Store or passed in the ResourceName parameter of the "
+ "Initialize function.  It is empty if the driver is not initialized."
+
+3 all "Logical Name" KEDMM6500_ATTR_LOGICAL_NAME ViString g 
+ "Logical Name identifies a driver session in the Configuration Store.  If Logical "
+ "Name is not empty, the driver was initialized from information in the driver session. "
+ " If it is empty, the driver was initialized without using the Configuration Store."
+
+2 all "Driver Capabilities"
+
+3 all "Class Group Capabilities" KEDMM6500_ATTR_GROUP_CAPABILITIES ViString g 
+ "A comma-separated list of the class capability groups implemented by the driver. "
+ " Capability group names are documented in the IVI class specifications.  If the driver "
+ "is not class compliant, the driver returns an empty string."
+
+3 all "Supported Instrument Models" KEDMM6500_ATTR_SUPPORTED_INSTRUMENT_MODELS ViString g 
+ "A comma-separated list of instrument models that the IVI specific driver can control. "
+ " The string does not include an abbreviation for the manufacturer if it is the same "
+ "for all models."
+
+2 all "Driver Identification"
+
+3 all "Specific Driver Class Spec Major Version" KEDMM6500_ATTR_SPECIFIC_DRIVER_CLASS_SPEC_MAJOR_VERSION ViInt32 g 
+ "Returns the major version number of the class specification in accordance with which "
+ "the IVI specific driver was developed. Zero is returned if the driver is not compliant "
+ "with a class specification."
+
+3 all "Specific Driver Class Spec Minor Version" KEDMM6500_ATTR_SPECIFIC_DRIVER_CLASS_SPEC_MINOR_VERSION ViInt32 g 
+ "Returns the minor version number of the class specification in accordance with which "
+ "the IVI specific driver was developed. Zero is returned if the driver is not compliant "
+ "with a class specification."
+
+3 all "Specific Driver Description" KEDMM6500_ATTR_SPECIFIC_DRIVER_DESCRIPTION ViString g 
+ "Returns a brief description of the IVI specific driver. The string that this attribute "
+ "returns contains a maximum of 256 bytes including the NUL byte."
+
+3 all "Specific Driver Prefix" KEDMM6500_ATTR_SPECIFIC_DRIVER_PREFIX ViString g 
+ "Returns the case-sensitive prefix of the user-callable functions that the IVI-C specific "
+ "driver exports. The string that this attribute returns contains a maximum of 32 bytes "
+ "including the NUL byte."
+
+3 all "Specific Driver Revision" KEDMM6500_ATTR_SPECIFIC_DRIVER_REVISION ViString g 
+ "Returns version information about the IVI specific driver. The string that this attribute "
+ "returns contains a maximum of 256 bytes including the NUL byte."
+
+3 all "Specific Driver Vendor" KEDMM6500_ATTR_SPECIFIC_DRIVER_VENDOR ViString g 
+ "Returns the name of the vendor that supplies the IVI specific driver. The string "
+ "that this attribute returns contains a maximum of 256 bytes including the NUL byte."
+
+2 all "Instrument Identification"
+
+3 all "Instrument Firmware Revision" KEDMM6500_ATTR_INSTRUMENT_FIRMWARE_REVISION ViString g 
+ "The firmware revision reported by the physical instrument.  If Simulation is enabled "
+ "or the instrument is not capable of reporting the firmware revision, a string is "
+ "returned that explains the condition."
+
+3 all "Instrument Manufacturer" KEDMM6500_ATTR_INSTRUMENT_MANUFACTURER ViString g 
+ "The name of the manufacturer reported by the physical instrument.  If Simulation "
+ "is enabled or the instrument is not capable of reporting the name of the manufacturer, "
+ "a string is returned that explains the condition. Manufacturer is limited to 256 "
+ "bytes"
+
+3 all "Instrument Model" KEDMM6500_ATTR_INSTRUMENT_MODEL ViString g 
+ "The model number or name reported by the physical instrument.  If Simulation is enabled "
+ "or the instrument is not capable of reporting the model number or name, a string "
+ "is returned that explains the condition.  Model is limited to 256 bytes"
+
+2 all "User Options"
+
+3 all "Cache" KEDMM6500_ATTR_CACHE ViBoolean gs 
+ "Drivers may choose to always cache some instrument settings, never cache others, "
+ "and optionally cache others, to avoid unecessary I/O to the instrument.  If True, "
+ "the driver caches optionally cached instrument settings."
+
+3 all "Interchange Check" KEDMM6500_ATTR_INTERCHANGE_CHECK ViBoolean gs 
+ "If True, the driver maintains a record of interchangeability warnings.  If the driver "
+ "does not support interchangeability checking, attempts to set InterchangeCheck to "
+ "True return an error."
+
+3 all "Query Instrument Status" KEDMM6500_ATTR_QUERY_INSTRUMENT_STATUS ViBoolean gs 
+ "If True, the driver queries the instrument status at the end of each method or property "
+ "that performs I/O to the instrument.  If an error is reported, use ErrorQuery to "
+ "retrieve error messages one at a time from the instrument."
+
+3 all "Range Check" KEDMM6500_ATTR_RANGE_CHECK ViBoolean gs 
+ "Drivers may choose to always validate some property/parameter values, never validate "
+ "others, and optionally validate others, to avoid sending invalid commands to the "
+ "instrument.  If True, the driver performs optional validations."
+
+3 all "Record Value Coercions" KEDMM6500_ATTR_RECORD_COERCIONS ViBoolean gs 
+ "If True, the driver keeps a list of the value coercions it makes for ViInt32 and "
+ "ViReal64 attributes.  If the driver does not support coercion recording, attempts "
+ "to set RecordCoercions to True will return an error."
+
+3 all "Simulate" KEDMM6500_ATTR_SIMULATE ViBoolean gs 
+ "If True, the driver does not perform I/O to the instrument, and returns simulated "
+ "values for output parameters."
+
+1 all "AC Measurements"
+
+2 all "AC Max Freq" KEDMM6500_ATTR_AC_MAX_FREQ ViReal64 gs 
+ "The maximum frequency component of the input signal for AC measurements.  The value "
+ "of this property affects instrument behavior only when the Function property is set "
+ "to an AC voltage or AC current measurement."
+
+2 all "AC Min Freq" KEDMM6500_ATTR_AC_MIN_FREQ ViReal64 gs 
+ "The minimum frequency component of the input signal for AC measurements.  The value "
+ "of this property affects instrument behavior only when the Function property is set "
+ "to an AC voltage or AC current measurement."
+
+1 all "Basic Operation"
+
+2 all "Function" KEDMM6500_ATTR_FUNCTION ViInt32 gs Function
+ "The measurement function.  This property determines the units for Range and Resolution "
+ "and the values returned by the Read, Read Multiple Point, Fetch, and Fetch Multiple "
+ "Point methods."
+
+2 all "Range" KEDMM6500_ATTR_RANGE ViReal64 gs 
+ "The measurement range, coerced by the driver to the appropriate range for the instrument. "
+ " Positive values set the absolute value of the maximum measurement expected.  Negative "
+ "values set Auto Range mode.  Units are determined by Function."
+
+2 all "Resolution" KEDMM6500_ATTR_RESOLUTION_ABSOLUTE ViReal64 gs 
+ "The measurement resolution in absolute units.  Units are determined by Function."
+
+1 all "Configuration Information"
+
+2 all "Aperture Time" KEDMM6500_ATTR_APERTURE_TIME ViReal64 g 
+ "The measurement aperture time (also known as integration time) based on the present "
+ "configuration.  Units are specified by the property ApertureTimeUnits."
+
+2 all "Aperture Time Units" KEDMM6500_ATTR_APERTURE_TIME_UNITS ViInt32 g ApertureTimeUnits
+ "The units for the ApertureTime property."
+
+2 all "Auto Range Value" KEDMM6500_ATTR_AUTO_RANGE_VALUE ViReal64 g 
+ "The actual range that the DMM is currently using, even if it is auto-ranging."
+
+1 all "Frequency Measurements"
+
+2 all "Frequency Voltage Range" KEDMM6500_ATTR_FREQ_VOLTAGE_RANGE ViReal64 gs 
+ "The expected maximum voltage level of the input signal for frequency and period measurements. "
+ "Positive values set the manual range. Negative values set Auto Range mode.  The units "
+ "are specified in Volts RMS."
+
+1 all "Measurement Operation Options"
+
+2 all "Auto Zero" KEDMM6500_ATTR_AUTO_ZERO ViInt32 gs AutoZero
+ "The auto-zero mode.  When the auto-zero mode is enabled, the DMM internally disconnects "
+ "the input signal and takes a Zero Reading. The DMM then subtracts the Zero Reading "
+ "from the measurement."
+
+2 all "Powerline Frequency" KEDMM6500_ATTR_POWERLINE_FREQ ViReal64 gs 
+ "The power line frequency in Hertz."
+
+1 all "Multi-Point Acquisition"
+
+2 all "Measure Complete Destination" KEDMM6500_ATTR_MEAS_COMPLETE_DEST ViInt32 gs MeasCompleteDest
+ "The destination of the measurement-complete signal generated after each measurement."
+
+2 all "Sample Count" KEDMM6500_ATTR_SAMPLE_COUNT ViInt32 gs 
+ "The number of measurements the DMM takes each time it receives a trigger."
+
+2 all "Sample Interval" KEDMM6500_ATTR_SAMPLE_INTERVAL ViReal64 gs 
+ "The interval between samples in seconds. Applies only when Sample Count is greater "
+ "than 1 and Sample Trigger is Interval."
+
+2 all "Sample Trigger" KEDMM6500_ATTR_SAMPLE_TRIGGER ViInt32 gs SampleTrigger
+ "The sample trigger source.  If the value of the Sample Count is greater than 1, the "
+ "DMM enters the Wait-For-Sample-Trigger state after taking a single measurement.  "
+ "When a sample trigger occurs, the DMM takes the next measurement."
+
+2 all "Trigger Count" KEDMM6500_ATTR_TRIGGER_COUNT ViInt32 gs 
+ "The number of triggers the DMM accepts before it returns to the idle state."
+
+1 all "System"
+
+2 all "Fan Level" KEDMM6500_ATTR_FAN_LEVEL ViInt32 gs FanLevel
+ "This property sets or queries the speed of the instrument fan."
+
+2 all "I/O Session" KEDMM6500_ATTR_SYSTEM_IO_SESSION ViSession g 
+ "Gets an integer that identifies the session in the underlying I/O that implements "
+ "the I/O connection to the device."
+
+2 all "I/O Timeout" KEDMM6500_ATTR_SYSTEM_IO_TIMEOUT ViInt32 gs 
+ "Gets or sets the I/O timeout value in milliseconds."
+
+2 all "Measurement Function" KEDMM6500_ATTR_MEASUREMENT_FUNCTION ViInt32 gs Function1
+ "The measurement function.  This property determines the units for Range and Resolution "
+ "and the values returned by the Read, Read Multiple Point, Fetch, and Fetch Multiple "
+ "Point methods."
+
+2 all "CardSlot"
+
+3 all "CardSlot Count" KEDMM6500_ATTR_CARDSLOT_COUNT ViInt32 g 
+
+3 all "Identity" KEDMM6500_ATTR_IDENTITY ViString g 
+ "This method returns a string that contains information about the card in the specified "
+ "slot."
+
+3 all "Is Temperature Sensor Channels Supported" KEDMM6500_ATTR_IS_TEMPERATURE_SENSOR_CHANNELS_SUPPORTED ViBoolean g 
+ "This property gets if the card in the specified slot supports temperature sensor "
+ "channels."
+
+3 all "IsCS4 Wire Ohm Channels Supported" KEDMM6500_ATTR_ISCS4_WIRE_OHM_CHANNELS_SUPPORTED ViBoolean g 
+ "The property gets if the specified slot supports commonside 4-wire ohm channels."
+
+3 all "Voltage Max" KEDMM6500_ATTR_VOLTAGE_MAX ViReal64 g 
+ "This property returns the maximum voltage of all channels on a card in the specified "
+ "slot."
+
+2 all "DataTransfer"
+
+3 all "Ascii Precision" KEDMM6500_ATTR_ASCII_PRECISION ViInt32 gs 
+ "Sets or queries the precision (number of digits) for all numbers returned in the "
+ "ASCII format."
+
+3 all "Byte Order" KEDMM6500_ATTR_BYTE_ORDER ViInt32 gs ByteOrderType
+ "Sets or queries the byte order for the IEEE-754 binary formats."
+
+3 all "Data Format" KEDMM6500_ATTR_DATA_FORMAT ViInt32 gs DataFormatType
+ "Sets or queries the data format that is used when transferring readings over the "
+ "remote interface."
+
+2 all "Digitizer"
+
+3 all "Digitizer Function" KEDMM6500_ATTR_DIGITIZER_FUNCTION ViInt32 gs DigitizerFunction1
+ "The digitizer measurement function."
+
+3 all "Configuration"
+
+4 all "Digitizer Count" KEDMM6500_ATTR_DIGITIZER_COUNT ViInt32 gs 
+ "Sets or Queries the number of measurements to be performed when a measurement is "
+ "requested."
+
+4 all "Digitizer Dc Volt Input Impedance" KEDMM6500_ATTR_DIGITIZER_DC_VOLT_INPUT_IMPEDANCE ViInt32 gs InputImpedance
+ "This property determines when the 10 MO input divider is enabled."
+
+2 all "Display"
+
+3 all "Brightness" KEDMM6500_ATTR_BRIGHTNESS ViInt32 s DisplayBrightness
+ "Sets the brightness of the front-panel display."
+
+3 all "Reading Format" KEDMM6500_ATTR_READING_FORMAT ViInt32 gs DisplayReadingFormat
+ "Sets or queries the format that is used to display measurement readings on the front-panel "
+ "display of the instrument."
+
+3 all "Screen Name" KEDMM6500_ATTR_SCREEN_NAME ViInt32 s DisplayScreenName
+ "Sets or queries the front-panel screen is displayed."
+
+2 all "Measurement"
+
+3 all "Configuration"
+
+4 all "Count" KEDMM6500_ATTR_COUNT ViInt32 gs 
+ "Sets or Queries the number of measurements to be performed when a measurement is "
+ "requested."
+
+4 all "Dc Volt Input Impedance" KEDMM6500_ATTR_DC_VOLT_INPUT_IMPEDANCE ViInt32 gs InputImpedance
+ "This property determines when the 10 MO input divider is enabled."
+
+4 all "Dc Voltage Ratio Sense Range" KEDMM6500_ATTR_DC_VOLTAGE_RATIO_SENSE_RANGE ViReal64 g 
+ "This property sets or queries the positive full-scale value of the measurement range "
+ "for the DC Voltage ratio function.Autorange is automatically set to off if a specific "
+ "value is set."
+
+4 all "List"
+
+5 all "Catalog" KEDMM6500_ATTR_CATALOG ViString g 
+ "Returns the name of one measure configuration list."
+
+4 all "Relative"
+
+5 all "DC Volt Ratio Method" KEDMM6500_ATTR_DC_VOLT_RATIO_METHOD ViInt32 gs RelativeOffsetMethod
+ "The property determines if relative offset is applied to the measurements before "
+ "calculating the DC voltage ratio value."
+
+4 all "Temperature"
+
+5 all "Temp Tc Simulated Ref Junc" KEDMM6500_ATTR_TEMP_TC_SIMULATED_REF_JUNC ViReal64 gs 
+ "The external reference junction temperature when a fixed reference junction thermocouple "
+ "is used to measure temperature, or the thermocouple junction temperature of an instrument "
+ "without an internal temperature sensor, in degrees Celcius."
+
+5 all "Temp Tc Type2" KEDMM6500_ATTR_TEMP_TC_TYPE2 ViInt32 gs ThermocoupleType2
+ "The type of thermocouple used to measure the temperature. Applies only when the Temperature "
+ "Transducer Type is Thermocouple."
+
+5 all "Temp Thermistor Res2" KEDMM6500_ATTR_TEMP_THERMISTOR_RES2 ViReal64 gs 
+ "The resistance of the thermistor in Ohms.  Applies only when the Temperature Transducer "
+ "Type property is Thermistor.Valid values are 2200, 5000 or 10000,default is 5000."
+
+5 all "Temp Transducer Type2" KEDMM6500_ATTR_TEMP_TRANSDUCER_TYPE2 ViInt32 gs TransducerType2
+ "The type of device used to measure the temperature. This property affects instrument "
+ "behavior only when Function is set to a temperature measurement."
+
+5 all "Thermocouple Ref Junction Type" KEDMM6500_ATTR_THERMOCOUPLE_REF_JUNCTION_TYPE ViInt32 gs ThermocoupleRefJunctionType
+ "The property defines the type of the thermocouple reference junction."
+
+5 all "Units" KEDMM6500_ATTR_UNITS ViInt32 gs TemperatureUnit
+ "Sets or queries units for temperature measurement."
+
+2 all "Route"
+
+3 all "Terminal2" KEDMM6500_ATTR_TERMINAL2 ViInt32 g SystemTerminal
+ "Queries which set of input and output terminals the instrument is using."
+
+3 all "ChannelConfiguration"
+
+4 all "Close Count Interval" KEDMM6500_ATTR_CLOSE_COUNT_INTERVAL ViInt32 gs ChannelCloseCountInterval
+ "The property determines how often the instrument stores the channel relay closure "
+ "count."
+
+4 all "Multiple Closed" KEDMM6500_ATTR_MULTIPLE_CLOSED ViString gs 
+ "The property SET closes the listed channels without affecting any other channels "
+ "and GET queries a list of all closed channels."
+
+3 all "Scan"
+
+4 all "Buffer" KEDMM6500_ATTR_BUFFER ViString gs 
+ "The property defines which buffer is used with the scan."
+
+4 all "Bypass" KEDMM6500_ATTR_BYPASS ViBoolean gs 
+ "The property indicates whether the first channel of the scan waits for the channel "
+ "stimulus event to be satisfied before closing. Enable Bypass is TRUE."
+
+4 all "Channel Stimulus" KEDMM6500_ATTR_CHANNEL_STIMULUS ViString gs 
+ "The property determines which trigger event causes the step action to occur."
+
+4 all "Count" KEDMM6500_ATTR_SCAN_COUNT ViInt64 gs 
+ "The property sets or queries the scan count in the trigger model. It indicates how "
+ "many times the scan list is iterated through before the scan completes."
+
+4 all "Interval" KEDMM6500_ATTR_INTERVAL ViReal64 gs 
+ "The property specifies the interval time between scan starts when the scan count "
+ "is more than one."
+
+4 all "Measure Interval" KEDMM6500_ATTR_MEASURE_INTERVAL ViReal64 gs 
+ "The property specifies the interval time between scan starts when the scan count "
+ "is more than one."
+
+4 all "Measure Stimulus" KEDMM6500_ATTR_MEASURE_STIMULUS ViString gs 
+ "The property determines trigger event for measurement."
+
+4 all "Mode" KEDMM6500_ATTR_MODE ViInt32 gs ScanMode
+ "Scan mode settings."
+
+4 all "Restart" KEDMM6500_ATTR_RESTART ViBoolean gs 
+ "This property causes a scan to automatically restart if it was interrupted by a power "
+ "failure.True will Enable Scan Restart"
+
+4 all "Start Stimulus" KEDMM6500_ATTR_START_STIMULUS ViString gs 
+ "The property determines which trigger event starts the scan."
+
+4 all "Step Count" KEDMM6500_ATTR_STEP_COUNT ViInt64 g 
+ "The property returns the number of steps in the present scan."
+
+4 all "Monitor"
+
+5 all "Channel" KEDMM6500_ATTR_CHANNEL ViString gs 
+ "The property defines which channel to monitor for a limit to be reached before starting "
+ "the scan."
+
+5 all "Lower Limit" KEDMM6500_ATTR_LOWER_LIMIT ViReal64 gs 
+ "The property defines the low limit to be used by the scan monitor."
+
+5 all "Mode" KEDMM6500_ATTR_MODE2 ViInt32 gs ScanMonitorMode
+ "The property determines if a scan starts immediately when triggered or after measurements "
+ "reach a set value."
+
+5 all "Upper Limit" KEDMM6500_ATTR_UPPER_LIMIT ViReal64 gs 
+ "The property defines the high limit to be used by the scan monitor."
+
+2 all "Status"
+
+3 all "Enable Operation Event Register" KEDMM6500_ATTR_ENABLE_OPERATION_EVENT_REGISTER ViInt32 gs 
+ "Sets or queries the contents of the Enable register of the Operation Event Register.."
+
+3 all "Enable Questionable Event Register" KEDMM6500_ATTR_ENABLE_QUESTIONABLE_EVENT_REGISTER ViInt32 gs 
+ "Sets or queries the contents of the Enable register of the Questionable Event Register."
+
+2 all "System"
+
+3 all "Access" KEDMM6500_ATTR_ACCESS ViInt32 gs SystemAccessType
+ "Sets or queries the type of access users have to the instrument through different "
+ "interfaces."
+
+3 all "Error Count" KEDMM6500_ATTR_ERROR_COUNT ViInt32 g 
+ "Return the number of errors in the event log."
+
+3 all "Gpib Address" KEDMM6500_ATTR_GPIB_ADDRESS ViInt32 gs 
+ "Set or Query the GPIB address.The address can be set to any address value between "
+ "0 and 30."
+
+3 all "Mac Address" KEDMM6500_ATTR_MAC_ADDRESS ViString g 
+ "Queries the LAN MAC address."
+
+3 all "Password" KEDMM6500_ATTR_PASSWORD ViString s 
+ "Stores the instrument password."
+
+3 all "Power Line Frequency" KEDMM6500_ATTR_POWER_LINE_FREQUENCY ViInt32 g SystemPowerLineFrequency
+ "Queries the line frequency that was automatically detected."
+
+3 all "Power On Setup" KEDMM6500_ATTR_POWER_ON_SETUP ViInt32 gs SystemPowerOn
+ "Sets or queries the defaults that are used when you power on the instrument."
+
+3 all "Programming Language" KEDMM6500_ATTR_PROGRAMMING_LANGUAGE ViInt32 gs ProgrammingLanguage
+ "Sets or Queries the programming language of the unit."
+
+3 all "Scpi Version" KEDMM6500_ATTR_SCPI_VERSION ViString g 
+ "Query the present SCPI version."
+
+3 all "Terminal" KEDMM6500_ATTR_TERMINAL ViInt32 g SystemTerminal
+ "Queries which set of input and output terminals the instrument is using."
+
+3 all "Time" KEDMM6500_ATTR_TIME ViString gs 
+ "Sets or queries the absolute time of the instrument. To set time use comma separated "
+ "string in format(with-out double quotes): {year}, {month}, {day}, {hour}, {minute}, "
+ "{second}."
+
+3 all "Time In Seconds" KEDMM6500_ATTR_TIME_IN_SECONDS ViReal64 g 
+ "Queries the absolute time of the instrument. It returns the present timestamp value "
+ "in seconds since January 1, 1970 to the nearest second."
+
+2 all "Trigger"
+
+3 all "Model"
+
+4 all "Trigger Model State" KEDMM6500_ATTR_TRIGGER_MODEL_STATE ViString g 
+ "Returns the present state of the trigger model and the block that the trigger model "
+ "is presently executing."
+
+4 all "Block"
+
+5 all "Trigger Model Block Query List" KEDMM6500_ATTR_TRIGGER_MODEL_BLOCK_QUERY_LIST ViString g 
+ "Returns the settings for all trigger model building blocks."
+
+1 all "Temperature Measurements"
+
+2 all "Transducer Type" KEDMM6500_ATTR_TEMP_TRANSDUCER_TYPE ViInt32 gs TransducerType
+ "The type of device used to measure the temperature. This property affects instrument "
+ "behavior only when Function is set to a temperature measurement."
+
+2 all "Resistance Temperature Device"
+
+3 all "RTD Alpha" KEDMM6500_ATTR_TEMP_RTD_ALPHA ViReal64 gs 
+ "The alpha parameter for a resistance temperature device (RTD).  Applies only when "
+ "the Temperature Transducer Type is set to 2 Wire RTD or 4 Wire RTD."
+
+3 all "RTD Resistance" KEDMM6500_ATTR_TEMP_RTD_RES ViReal64 gs 
+ "The R0 parameter (resistance) for a resistance temperature device (RTD). Also known "
+ "as the RTD reference value.  Applies only when the Temperature Transducer Type is "
+ "set to 2 Wire RTD or 4 Wire RTD."
+
+2 all "Thermistor"
+
+3 all "Thermistor Resistance" KEDMM6500_ATTR_TEMP_THERMISTOR_RES ViReal64 gs 
+ "The resistance of the thermistor in Ohms.  Applies only when the Temperature Transducer "
+ "Type property is Thermistor."
+
+2 all "Thermocouple"
+
+3 all "Thermocouple Fixed Reference Junction" KEDMM6500_ATTR_TEMP_TC_FIXED_REF_JUNC ViReal64 gs 
+ "The external reference junction temperature when a fixed reference junction thermocouple "
+ "is used to measure temperature, or the thermocouple junction temperature of an instrument "
+ "without an internal temperature sensor, in degrees Celcius."
+
+3 all "Thermocouple Reference Junction Type" KEDMM6500_ATTR_TEMP_TC_REF_JUNC_TYPE ViInt32 gs RefJunctionType
+ "The type of reference junction to be used in the reference junction compensation "
+ "of a thermocouple measurement. Applies only when the Temperature Transducer Type "
+ "is Thermocouple."
+
+3 all "Thermocouple Type" KEDMM6500_ATTR_TEMP_TC_TYPE ViInt32 gs ThermocoupleType
+ "The type of thermocouple used to measure the temperature. Applies only when the Temperature "
+ "Transducer Type is Thermocouple."
+
+1 all "Trigger"
+
+2 all "Trigger Delay" KEDMM6500_ATTR_TRIGGER_DELAY ViReal64 gs 
+ "The interval between the time when the DMM receives the trigger and the time when "
+ "it takes a measurement. Positive values set the trigger delay in seconds. Negative "
+ "values set auto delay mode."
+
+2 all "Trigger Slope" KEDMM6500_ATTR_TRIGGER_SLOPE ViInt32 gs TriggerSlope
+ "The polarity of the external trigger slope, which determines whether the DMM triggers "
+ "on either the rising or the falling edge of the external trigger source."
+
+2 all "Trigger Source" KEDMM6500_ATTR_TRIGGER_SOURCE ViInt32 gs TriggerSource
+ "The trigger source."
